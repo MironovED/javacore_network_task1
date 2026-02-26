@@ -13,7 +13,7 @@ public class Client {
     public static void main(String[] args) {
         String serverIp = "127.0.0.1";
 
-        try(Socket socket = new Socket(serverIp, 8800)) {
+        try (Socket socket = new Socket(serverIp, 8800)) {
             log.info("Подключились к серверу");
             BufferedReader in = new BufferedReader(
                     new InputStreamReader(socket.getInputStream())
